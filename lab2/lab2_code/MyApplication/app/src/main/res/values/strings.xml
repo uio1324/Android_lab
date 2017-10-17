@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="cancel">取消</string>
+    <string name="radioButton_Student">您选择了[学生]</string>
+    <string name="confirm">确定</string>
+    <string name="radioButton_Teacher">您选择了[教职工]</string>
+    <string name="loginSuccess">登陆成功</string>
+    <string name="loginFail">学号或密码错误</string>
+    <string name="refuseStudent">学生注册功能尚未启用</string>
+    <string name="refuseTeacher">教职工注册功能尚未启用</string>
+</resources>
