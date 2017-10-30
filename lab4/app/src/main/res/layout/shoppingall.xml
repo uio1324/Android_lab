@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/shoppinFfirstLetterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/circle"
+        />
+
+    <TextView
+        android:id="@+id/shoppingItemTextView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="20sp"
+        android:gravity="left|center_vertical"
+        android:layout_toRightOf="@id/shoppinFfirstLetterTextView"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/shoppingPriceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/shoppinFfirstLetterTextView"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/black"
+        
+        />
+</RelativeLayout >
