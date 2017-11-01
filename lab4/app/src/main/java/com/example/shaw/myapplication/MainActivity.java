@@ -180,6 +180,12 @@ public class MainActivity extends AppCompatActivity {
         intenBroadcast.putExtras(recommand_bundle);
         sendBroadcast(intenBroadcast);
 
+//        Intent widgetBroadcast = new Intent("android.appwidget.action.APPWIDGET_UPDATE");
+//        widgetBroadcast.putExtras(recommand_bundle);
+//        sendBroadcast(widgetBroadcast);
+
+
+
         //注册EventBus订阅者
         EventBus.getDefault().register(this);
         //注册广播

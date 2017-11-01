@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,14 +28,24 @@
                 <action android:name="STATICACTION" />
             </intent-filter>
         </receiver>
-        <!--<receiver-->
-            <!--android:name=".DynamicReceiver"-->
-            <!--android:enabled="true"-->
-            <!--android:exported="true">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="DYNAMICACTION"/>-->
-            <!--</intent-filter>-->
-        <!--</receiver>-->
+        <!-- <receiver -->
+        <!-- android:name=".DynamicReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="DYNAMICACTION"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <receiver android:name=".mWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="STATICACTION" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/m_widget_info" />
+        </receiver>
     </application>
 
 </manifest>
