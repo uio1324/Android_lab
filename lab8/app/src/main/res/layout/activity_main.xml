@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shaw.lab8.MainActivity">
+
+    <Button
+        android:id="@+id/AddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="增加条目"
+        android:background="#00c950"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10px"
+        />
+
+    <TextView
+        android:id="@+id/NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名"
+        android:textSize="20sp"
+        android:layout_marginTop="10px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AddButton"
+        app:layout_constraintRight_toLeftOf="@id/BirthdayTextView"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <TextView
+        android:id="@+id/BirthdayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生日"
+        android:textSize="20sp"
+
+        app:layout_constraintLeft_toRightOf="@id/NameTextView"
+        app:layout_constraintTop_toTopOf="@id/NameTextView"
+        app:layout_constraintRight_toLeftOf="@id/GiftTextView"/>
+
+    <TextView
+        android:id="@+id/GiftTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="礼物"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/BirthdayTextView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/NameTextView"/>
+
+    <View
+        android:id="@+id/SeperateLineView"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="horizontal"
+        android:background="#55000000"
+        app:layout_constraintTop_toBottomOf="@id/NameTextView"
+        android:layout_marginTop="20px"
+        />
+
+    <ListView
+        android:id="@+id/ListListView"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_constraintTop_toBottomOf="@id/SeperateLineView"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </ListView>
+
+
+</android.support.constraint.ConstraintLayout>

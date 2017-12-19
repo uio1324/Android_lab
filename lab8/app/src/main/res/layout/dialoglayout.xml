@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名："
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/h2"
+        android:layout_marginTop="50px"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/dialogNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王尼玛"
+        app:layout_constraintLeft_toRightOf="@id/h1"
+        app:layout_constraintTop_toTopOf="@id/h1"
+        app:layout_constraintBottom_toBottomOf="@id/h1"/>
+
+    <TextView
+        android:id="@+id/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生日："
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/h1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/dialogBirthdayEditText"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginTop="40px"
+        />
+
+    <EditText
+        android:id="@+id/dialogBirthdayEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        app:layout_constraintLeft_toRightOf="@id/h2"
+        app:layout_constraintTop_toTopOf="@id/h2"
+        app:layout_constraintBottom_toBottomOf="@id/h2"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="礼物："
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/h2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/dialogGiftEditText"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginTop="40px"
+        />
+
+    <EditText
+        android:id="@+id/dialogGiftEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        app:layout_constraintLeft_toRightOf="@id/h3"
+        app:layout_constraintTop_toTopOf="@id/h3"
+        app:layout_constraintBottom_toBottomOf="@id/h3"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话："
+        android:textSize="15sp"
+        android:textColor="#00c950"
+        app:layout_constraintTop_toBottomOf="@id/h3"
+        app:layout_constraintLeft_toLeftOf="@id/h3"
+        android:layout_marginTop="40px"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/dialogPhoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12345678900"
+        android:textSize="15sp"
+        android:textColor="#00c950"
+        app:layout_constraintLeft_toRightOf="@id/h4"
+        app:layout_constraintTop_toTopOf="@id/h4"
+        app:layout_constraintBottom_toBottomOf="@id/h4" />
+</android.support.constraint.ConstraintLayout>
